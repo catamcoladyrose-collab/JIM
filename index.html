@@ -1,0 +1,106 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Number Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🎮 Lucky Number Game</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="game.html">Play Game</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div>
+                <h2>Can You Guess the Number?</h2>
+                <p>Welcome to Lucky Number Game!</p>
+                <p>Guess the secret number from 1 to 10.</p>
+                <a href="game.html" class="button">Start Playing</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="lucky-number.png"
+                     alt="Lucky Number Game Image">
+            </div>
+        </section>
+
+        <section class="card">
+            <h2>🎬 Game Preview</h2>
+            <p>Watch the video below before playing!</p>
+
+            <video controls width="100%">
+                <source src="game-video.mp4" type="video/mp4">
+                Your browser does not support video playback.
+            </video>
+        </section>
+
+        <section class="card">
+            <h2>How to Play</h2>
+            <ol>
+                <li>Click the Play Game page.</li>
+                <li>Enter a number from 1 to 10.</li>
+                <li>You have three tries to guess correctly.</li>
+            </ol>
+        </section>
+
+        <section class="card">
+            <h2>Game Information</h2>
+            <table>
+                <tr>
+                    <th>Game</th>
+                    <th>Players</th>
+                    <th>Difficulty</th>
+                </tr>
+                <tr>
+                    <td>Lucky Number</td>
+                    <td>1 Player</td>
+                    <td>Easy</td>
+                </tr>
+                <tr>
+                    <td>Guessing Game</td>
+                    <td>1 Player</td>
+                    <td>Beginner</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="card">
+            <h2>Player Feedback</h2>
+
+            <form onsubmit="alert('Thank you for your feedback!'); return false;">
+                <label for="name">Name:</label>
+                <input type="text" id="name"
+                       placeholder="Enter your name" required>
+
+                <label for="rating">Rate the game:</label>
+                <select id="rating" required>
+                    <option value="">Choose one</option>
+                    <option>Excellent</option>
+                    <option>Good</option>
+                    <option>Needs Improvement</option>
+                </select>
+
+                <label for="comment">Comment:</label>
+                <textarea id="comment" rows="3"
+                          placeholder="Write your comment"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Lucky Number Game</p>
+    </footer>
+
+</body>
+</html>
+```
